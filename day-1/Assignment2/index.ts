@@ -48,3 +48,21 @@ const getName=({firstname,lastname}:person)=>{
     return(`${lastname}`)
   }
 }
+
+interface Address{
+    houseNumber:number
+    street:number
+    city:string
+    state:string
+    postalnuCode:number
+    country:number
+}
+interface PersonDetails{
+
+    phone:number[];
+    addresses:string[];
+    email?:string;
+    firstname:string;
+    lastname:string;
+  middlename?:string;
+}
