@@ -33,3 +33,18 @@ const data1:data={
     status:false,
     id:1
 }
+const data:string="hello"
+interface person{
+    firstname:string;
+    lastname:string;
+}
+
+
+
+const getName=({firstname,lastname}:person)=>{
+  if(firstname&&lastname){
+    return (`${firstname}_${lastname}`)
+  }else{
+    return(`${lastname}`)
+  }
+}

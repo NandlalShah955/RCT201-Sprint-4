@@ -16,3 +16,13 @@ var data1 = {
     status: false,
     id: 1
 };
+var data = "hello";
+var getName = function (_a) {
+    var firstname = _a.firstname, lastname = _a.lastname;
+    if (firstname && lastname) {
+        return ("".concat(firstname, "_").concat(lastname));
+    }
+    else {
+        return ("".concat(lastname));
+    }
+};
